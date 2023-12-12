@@ -8,39 +8,39 @@ let projectContent = "";
 let cssContent = "";
 let jsContent = "";
 
-fs.readFile("registration.html", (err, data) => {
+fs.readFile("registration.html", (err, registration) => {
   if (err) {
     throw err;
   }
-  registrationContent = data;
+  registrationContent = registration;
 });
 
-fs.readFile("home.html", (err, data) => {
+fs.readFile("home.html", (err, home) => {
   if (err) {
     throw err;
   }
-  homeContent = data;
+  homeContent = home;
 });
 
-fs.readFile("project.html", (err, data) => {
+fs.readFile("project.html", (err, project) => {
   if (err) {
     throw err;
   }
-  projectContent = data;
+  projectContent = project;
 });
 
-fs.readFile("index.css", (err, data) => {
+fs.readFile("index.css", (err, css) => {
   if (err) {
     throw err;
   }
-  cssContent = data;
+  cssContent = css;
 });
 
-fs.readFile("index.js", (err, data) => {
+fs.readFile("index.js", (err, js) => {
   if (err) {
     throw err;
   }
-  jsContent = data;
+  jsContent = js;
 });
 
 const port = args.port || 5000;
