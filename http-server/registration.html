@@ -2,31 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Registration Forms</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="spacing1">
       <div class="container1">
         <h1>Registration Form</h1>
         <form id="registrationForm">
-          <label>Name</label><input type="text" id="username" name="username" required>
-          <label>Email</label><input type="email" id="useremail" name="useremail" required>
-          <label>Password</label><input type="password" id="userpassword" name="userpassword" required>
-          <label>Date of Birth</label><input type="date" id="userdob" name="userdob" required>
-          <label for="userterms">
-            <input type="checkbox" id="userterms" name="userterms" required>
+          <label for="name">Name</label><input type="text" id="name" name="name" required>
+          <label for="email">Email</label><input type="email" id="email" name="email" required>
+          <label for="password">Password</label><input type="password" id="password" name="password" required>
+          <label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
             I agree to the terms and conditions.
           </label>
           
           <button type="submit">Submit</button>
-          <button type="button" id="clearEntriesBtn">Clear Entries</button>
+          <button type="button" id="clearTableBtn">Clear Table</button>
         </form>
       </div>
     </div>
 
-    <table id="userDataTable">
-      <caption><h2>User Entries</h2></caption>
+    <table id="userTable">
+      <caption><h2>Entries</h2></caption>
       <thead>
         <tr>
           <th>Name</th>
@@ -36,7 +36,7 @@
           <th>Accepted terms?</th>
         </tr>
       </thead>
-      <tbody id="userDataBody"></tbody>
+      <tbody id="userTableBody"></tbody>
     </table>
     <script src="script.js"></script>
     <script src="index.js"></script>
