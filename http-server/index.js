@@ -43,7 +43,7 @@ fs.readFile("index.js", (error, js) => {
   jsContent = js;
 });
 
-const port = args.port || 5000;
+const port = argv.port || 5000;
 
 http.createServer((req, res) => {
   let url = req.url;
@@ -52,7 +52,7 @@ http.createServer((req, res) => {
     res.write(cssContent);
     res.end();
     return;
-  } else if (url === "/index.js") {
+  } else if (url === "/script.js") {
     res.writeHead(200, { "Content-Type": "text/javascript" });
     res.write(jsContent);
     res.end();
