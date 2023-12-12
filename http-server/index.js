@@ -8,37 +8,37 @@ let projectContent = "";
 let cssContent = "";
 let jsContent = "";
 
-fs.readFile("registration.html", (err, registration) => {
-  if (err) {
-    throw err;
+fs.readFile("registration.html", (error, registration) => {
+  if (error) {
+    throw error;
   }
   registrationContent = registration;
 });
 
-fs.readFile("home.html", (err, home) => {
-  if (err) {
-    throw err;
+fs.readFile("home.html", (error, home) => {
+  if (error) {
+    throw error;
   }
   homeContent = home;
 });
 
-fs.readFile("project.html", (err, project) => {
-  if (err) {
-    throw err;
+fs.readFile("project.html", (error, project) => {
+  if (error) {
+    throw error;
   }
   projectContent = project;
 });
 
-fs.readFile("index.css", (err, css) => {
-  if (err) {
-    throw err;
+fs.readFile("index.css", (error, css) => {
+  if (error) {
+    throw error;
   }
   cssContent = css;
 });
 
-fs.readFile("index.js", (err, js) => {
-  if (err) {
-    throw err;
+fs.readFile("index.js", (error, js) => {
+  if (error) {
+    throw error;
   }
   jsContent = js;
 });
